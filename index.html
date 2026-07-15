@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shadow Brotherhood - Join the Bandits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bandit-container">
+        <header class="bandit-header">
+            <h1>⚔ The Shadow Brotherhood ⚔</h1>
+            <div class="subtitle">"We take from the rich, we keep from the rich."</div>
+        </header>
+
+        <nav class="bandit-nav">
+            <button class="active" onclick="showSection('home')">The Hideout</button>
+            <button onclick="showSection('about')">Our Legend</button>
+            <button onclick="showSection('crew')">The Crew</button>
+            <button onclick="showSection('code')">The Code</button>
+            <button onclick="showSection('join')">Join Up</button>
+        </nav>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="bandit-section active">
+            <div class="wanted-poster">
+                <div style="font-size: 5rem; margin: 1rem 0;">🎭</div>
+                <div class="reward">REWARD: Adventure & Glory</div>
+                <div class="crime">
+                    <strong>FOR CRIMES AGAINST BOREDOM:</strong><br><br>
+                    The Shadow Brotherhood seeks bold souls tired of ordinary lives. 
+                    If you have courage in your heart and mischief in your eyes, 
+                    you are wanted—dead or alive (preferably alive, we're not monsters).
+                </div>
+                <div style="font-family: 'Special Elite', cursive; margin-top: 1rem;">
+                    Last seen heading toward the old oak tree at midnight.<br>
+                    Approach with caution and a sense of humor.
+                </div>
+                <div class="stamp">APPROVED BY THE CHIEF</div>
+            </div>
+
+            <div class="bandit-card">
+                <h3>🌙 Why Join Us?</h3>
+                <p>Are you tired of following the rules? Do you dream of moonlit escapades and secret hideouts? The Shadow Brotherhood isn't just a band of outlaws—we're a family. A slightly dysfunctional, definitely wanted family.</p>
+                <p>We offer:</p>
+                <ul>
+                    <li>Free training in stealth, swordplay, and sarcasm</li>
+                    <li>A share of all "liberated" treasures</li>
+                    <li>The best campfire stories this side of the kingdom</li>
+                    <li>Matching cloaks (dry-cleaning not included)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="bandit-section">
+            <div class="bandit-card">
+                <h3>📜 The Legend of the Brotherhood</h3>
+                <p>It all began on a stormy night ten years ago, when a group of misfits—an ex-knight, a disgraced bard, a thief with a heart of gold, and a guy named Steve—decided that the kingdom's laws were more like... suggestions.</p>
+                <p>What started as a petty theft of the Duke's favorite cheese wheel evolved into the most notorious bandit crew in the realm. We've robbed carriages, outsmarted sheriffs, and once accidentally saved a village from a dragon (long story, ask at the interview).</p>
+                <p>Our hideout? A secret location known only to members. Our motto? "No one gets left behind—unless they're slowing us down, then we at least leave a map."</p>
+            </div>
+
+            <div class="bandit-card">
+                <h3>🏆 Infamous Heists</h3>
+                <p><strong>The Great Cheese Caper (Year 1):</strong> Stole 400 wheels of aged cheddar. The Duke still cries at dinner parties.</p>
+                <p><strong>The Royal Sock Swindle (Year 3):</strong> Replaced the King's entire wardrobe with itchy wool. Hilarity ensued.</p>
+                <p><strong>The Treasury Tango (Year 5):</strong> Our most ambitious job. We didn't get the gold, but we did get away with the treasurer's favorite quill. Moral victory.</p>
+                <p><strong>Operation: Free the Chickens (Year 7):</strong> Liberated 200 chickens from Baron Von Cluck. They now roam free in the northern hills.</p>
+            </div>
+        </section>
+
+        <!-- CREW SECTION -->
+        <section id="crew" class="bandit-section">
+            <h2 style="font-family: 'Rye', serif; text-align: center; color: var(--blood); border-bottom: 3px solid var(--ink); padding-bottom: 1rem;">Meet the Infamous Crew</h2>
+            
+            <div class="member-grid">
+                <div class="member-card">
+                    <div class="member-icon">🎩</div>
+                    <h4>Blackjack Malone</h4>
+                    <div class="role">The Chief</div>
+                    <p>Former card shark. Never bluffs, except when he does.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">🗡️</div>
+                    <h4>Iron Lily</h4>
+                    <div class="role">Enforcer</div>
+                    <p>Can disarm a man with a look. The look involves a sword.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">🎵</div>
+                    <h4>One-Note Ned</h4>
+                    <div class="role">Bard & Distraction</div>
+                    <p>Terrible singer. Excellent at making guards leave their posts.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">🔒</div>
+                    <h4>Whisper</h4>
+                    <div class="role">Locksmith</div>
+                    <p>Can open any door. Can't open up about his feelings.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">🍞</div>
+                    <h4>Granny Loaf</h4>
+                    <div class="role">Cook & Poison Expert</div>
+                    <p>Her bread is to die for. Sometimes literally.</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-icon">🗺️</div>
+                    <h4>Wrong-Way Wilbur</h4>
+                    <div class="role">Scout</div>
+                    <p>Gets lost so you don't have to. Usually.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CODE SECTION -->
+        <section id="code" class="bandit-section">
+            <div class="wanted-poster" style="max-width: 600px;">
+                <div style="font-family: 'Rye', serif; font-size: 2rem; color: var(--blood); margin-bottom: 1rem;">THE CODE OF THE ROAD</div>
+                <div style="font-style: italic; margin-bottom: 1rem;">Break these, and you're walking home. Without your boots.</div>
+            </div>
+
+            <ul class="code-list">
+                <li><strong>Never steal from the poor.</strong> We're bandits, not monsters. The poor have nothing worth taking anyway.</li>
+                <li><strong>Share the loot equally.</strong> Except Steve. Steve gets 5% less because of the incident with the donkey.</li>
+                <li><strong>No betraying the crew.</strong> Snitches get stitches. And possibly dropped in a well.</li>
+                <li><strong>Always have an escape plan.</strong> And a backup plan. And a backup to the backup.</li>
+                <li><strong>Help a fellow bandit in need.</strong> Even if you owe them money. Especially if you owe them money.</li>
+                <li><strong>Never sing during a heist.</strong> Looking at you, Ned.</li>
+                <li><strong>Respect the hideout.</strong> Clean up after yourself. The rats are employees, not roommates.</li>
+                <li><strong>Always buy the first round.</strong> After a successful job. Before a job is just showing off.</li>
+            </ul>
+
+            <div class="bandit-card">
+                <h3>⚖️ The Three Trials</h3>
+                <p>Every recruit must pass three trials to earn their cloak:</p>
+                <p><strong>Trial of Shadows:</strong> Sneak past the sleeping bear in the east cave. (Don't worry, he's mostly deaf.)</p>
+                <p><strong>Trial of Wits:</strong> Out-haggle Granny Loaf at the market. (No one has succeeded, but trying is mandatory.)</p>
+                <p><strong>Trial of Loyalty:</strong> Take the secret oath while standing on one foot in a bucket of pudding. Tradition is tradition.</p>
+            </div>
+        </section>
+
+        <!-- JOIN SECTION -->
+        <section id="join" class="bandit-section">
+            <div class="bandit-card">
+                <h3>🖋️ Pledge Your Allegiance</h3>
+                <p>Fill out the form below. All information will be kept strictly confidential (unless the sheriff offers us a really good deal, but that hasn't happened yet).</p>
+            </div>
+
+            <form class="bandit-form" id="joinForm" onsubmit="handleJoin(event)">
+                <label for="name">Your Alias (Real Name is for Civilians)</label>
+                <input type="text" id="name" name="name" placeholder="e.g. 'Silent Bob' or 'The Phantom Pickpocket'" required>
+
+                <label for="skill">Primary Skill</label>
+                <select id="skill" name="skill" required>
+                    <option value="">-- Choose Your Talent --</option>
+                    <option value="stealth">Stealth & Sneaking</option>
+                    <option value="combat">Swordplay & Combat</option>
+                    <option value="locks">Lock Picking</option>
+                    <option value="disguise">Disguise & Deception</option>
+                    <option value="cooking">Cooking (We always need a cook)</option>
+                    <option value="bard">Music & Distraction</option>
+                    <option value="other">Something Mysterious</option>
+                </select>
+
+                <label for="experience">Previous Experience</label>
+                <select id="experience" name="experience" required>
+                    <option value="">-- How Wanted Are You? --</option>
+                    <option value="none">Complete Newbie (Everyone starts somewhere)</option>
+                    <option value="petty">Petty Thief (Stole candy as a child)</option>
+                    <option value="amateur">Amateur (Robbed a fruit stand)</option>
+                    <option value="seasoned">Seasoned (The sheriff knows your name)</option>
+                    <option value="notorious">Notorious (Wanted in 3+ kingdoms)</option>
+                </select>
+
+                <label for="motive">Why Do You Want to Join?</label>
+                <textarea id="motive" name="motive" rows="4" placeholder="Be honest. 'Revenge against the Baron' is a perfectly acceptable answer. So is 'I heard the food is good.'" required></textarea>
+
+                <label for="contact">Secret Drop Location (Email)</label>
+                <input type="email" id="contact" name="contact" placeholder="your-alias@secret-mail.com" required>
+
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; margin-top: 1rem;">
+                    <input type="checkbox" required style="width: auto;">
+                    I swear to uphold the Code of the Road and promise not to be a total jerk.
+                </label>
+
+                <button type="submit">🔥 Take the Oath 🔥</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div style="font-size: 3rem;">🎭</div>
+                <h2 style="font-family: 'Rye', serif; color: var(--gold);">Welcome to the Brotherhood!</h2>
+                <p>Your application has been stamped, sealed, and hidden under Blackjack's mattress.</p>
+                <p>Keep an eye on your secret drop location. A raven will arrive with further instructions.</p>
+                <div class="stamp" style="margin-top: 1rem;">INITIATED</div>
+            </div>
+        </section>
+
+        <footer class="bandit-footer">
+            <div class="seal">☠</div>
+            <p><strong>The Shadow Brotherhood</strong></p>
+            <p>Est. Sometime Last Tuesday | Wanted in Every Kingdom (Except That One)</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">This is a school play production. No actual laws were broken in the making of this website.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
