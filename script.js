@@ -1,6 +1,3 @@
-// PASTE THE ENTIRE <script> CONTENT FROM THE WIDGET ABOVE HERE
-// (Everything between <script> and </script>)
-
 function showSection(sectionId) {
     document.querySelectorAll('.bandit-section').forEach(section => {
         section.classList.remove('active');
